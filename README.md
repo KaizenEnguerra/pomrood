@@ -12,8 +12,8 @@ simple pomodoro timer app made in godot
 
 ## screenshots
 
-![input screen](/press screens/screen1.png)
+![input screen](https://raw.githubusercontent.com/KaizenEnguerra/pomrood/main/press%20screens/screen1.png)
 
-![work timer screen](/press screens/screen2.png)
+![work timer screen](https://raw.githubusercontent.com/KaizenEnguerra/pomrood/main/press%20screens/screen2.png)
 
-![break timer screen](/press screens/screen3.png)
+![break timer screen](https://raw.githubusercontent.com/KaizenEnguerra/pomrood/main/press%20screens/screen3.png)
