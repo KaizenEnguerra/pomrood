@@ -12,3 +12,8 @@ simple pomodoro timer app made in godot
 
 ## screenshots
 
+![input screen](/press screens/screen1.png)
+
+![work timer screen](/press screens/screen2.png)
+
+![break timer screen](/press screens/screen3.png)
