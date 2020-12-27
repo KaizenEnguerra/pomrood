@@ -1,0 +1,613 @@
+[gd_scene load_steps=38 format=2]
+
+[ext_resource path="res://taskinput.gd" type="Script" id=1]
+[ext_resource path="res://tasktimer.gd" type="Script" id=2]
+[ext_resource path="res://main.gd" type="Script" id=3]
+[ext_resource path="res://breaktimer.gd" type="Script" id=4]
+[ext_resource path="res://Polygon2D.gd" type="Script" id=5]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://font/GlacialIndifference-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=2]
+size = 70
+font_data = SubResource( 1 )
+
+[sub_resource type="OccluderPolygon2D" id=3]
+polygon = PoolVector2Array( 18.44, 3, 3.43999, 20.5, 2.43999, 51, 17.44, 67, 118.94, 69, 141.44, 50.5, 141.44, 22, 124.44, 1.5 )
+
+[sub_resource type="Theme" id=4]
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.176471, 0.188235, 0.278431, 1 )
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0.223529, 0.235294, 0.32549, 1 )
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0.176471, 0.188235, 0.278431, 1 )
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id=8]
+bg_color = Color( 0.176471, 0.188235, 0.278431, 1 )
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="DynamicFont" id=9]
+size = 60
+extra_spacing_top = -20
+font_data = SubResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=10]
+bg_color = Color( 0.176471, 0.188235, 0.278431, 1 )
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+expand_margin_left = 21.0
+
+[sub_resource type="DynamicFont" id=11]
+size = 25
+font_data = SubResource( 1 )
+
+[sub_resource type="DynamicFontData" id=12]
+font_path = "res://font/GlacialIndifference-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=13]
+size = 50
+font_data = SubResource( 12 )
+
+[sub_resource type="DynamicFont" id=14]
+size = 50
+font_data = SubResource( 12 )
+
+[sub_resource type="DynamicFont" id=15]
+size = 50
+font_data = SubResource( 12 )
+
+[sub_resource type="StyleBoxLine" id=16]
+color = Color( 0.176471, 0.188235, 0.278431, 1 )
+grow_begin = 0.0
+grow_end = 0.0
+thickness = 0
+vertical = true
+
+[sub_resource type="StyleBoxFlat" id=17]
+bg_color = Color( 0.176471, 0.188235, 0.278431, 1 )
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+expand_margin_left = 35.0
+expand_margin_top = 18.0
+expand_margin_bottom = 18.0
+
+[sub_resource type="StyleBoxFlat" id=18]
+bg_color = Color( 0.176471, 0.188235, 0.278431, 1 )
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+expand_margin_left = 35.0
+expand_margin_top = 18.0
+expand_margin_bottom = 18.0
+
+[sub_resource type="StyleBoxLine" id=19]
+color = Color( 0.176471, 0.188235, 0.278431, 1 )
+grow_begin = 0.0
+grow_end = 0.0
+thickness = 0
+vertical = true
+
+[sub_resource type="StyleBoxFlat" id=20]
+bg_color = Color( 0.176471, 0.188235, 0.278431, 1 )
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+expand_margin_left = 35.0
+expand_margin_top = 18.0
+expand_margin_bottom = 18.0
+
+[sub_resource type="StyleBoxFlat" id=21]
+bg_color = Color( 0.176471, 0.188235, 0.278431, 1 )
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+expand_margin_left = 35.0
+expand_margin_top = 18.0
+expand_margin_bottom = 18.0
+
+[sub_resource type="DynamicFontData" id=22]
+font_path = "res://font/GlacialIndifference-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=23]
+size = 25
+font_data = SubResource( 22 )
+
+[sub_resource type="DynamicFont" id=24]
+size = 25
+font_data = SubResource( 22 )
+
+[sub_resource type="DynamicFont" id=25]
+size = 80
+font_data = SubResource( 12 )
+
+[sub_resource type="DynamicFont" id=26]
+size = 35
+font_data = SubResource( 12 )
+
+[sub_resource type="Theme" id=27]
+
+[sub_resource type="StyleBoxFlat" id=28]
+bg_color = Color( 0.176471, 0.188235, 0.278431, 1 )
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id=29]
+bg_color = Color( 0.262745, 0.27451, 0.360784, 1 )
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id=30]
+bg_color = Color( 0.176471, 0.188235, 0.278431, 1 )
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id=31]
+bg_color = Color( 0.176471, 0.188235, 0.278431, 1 )
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="DynamicFont" id=32]
+size = 60
+extra_spacing_top = -2
+font_data = SubResource( 1 )
+
+[node name="main" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 432.0
+margin_bottom = 768.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="indicator" type="ColorRect" parent="."]
+margin_right = 432.0
+margin_bottom = 90.0
+color = Color( 0.937255, 0.482353, 0.423529, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="title" type="Label" parent="indicator"]
+margin_left = 11.0118
+margin_top = 16.8416
+margin_right = 335.012
+margin_bottom = 111.842
+custom_fonts/font = SubResource( 2 )
+text = "pomrood"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Polygon2D" type="Polygon2D" parent="indicator"]
+color = Color( 0, 0, 0, 0 )
+polygon = PoolVector2Array( 26.0926, 89.7453, 433.499, 89.9796, 434.301, 81.1899, -4.22624, 78.6672, -7.52562, 89.6517 )
+script = ExtResource( 5 )
+
+[node name="taskinput" type="Control" parent="."]
+margin_right = 432.0
+margin_bottom = 768.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="taskinput"]
+position = Vector2( 142.56, 576 )
+occluder = SubResource( 3 )
+
+[node name="go" type="Button" parent="taskinput"]
+anchor_left = 0.33
+anchor_top = 0.75
+anchor_right = 0.66
+anchor_bottom = 0.75
+margin_bottom = 70.0
+focus_mode = 0
+size_flags_vertical = 4
+theme = SubResource( 4 )
+custom_styles/hover = SubResource( 5 )
+custom_styles/pressed = SubResource( 6 )
+custom_styles/focus = SubResource( 7 )
+custom_styles/normal = SubResource( 8 )
+custom_fonts/font = SubResource( 9 )
+text = "go"
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="taskname" type="LineEdit" parent="taskinput"]
+anchor_left = 0.05
+anchor_top = 0.25
+anchor_right = 0.9
+anchor_bottom = 0.3
+size_flags_vertical = 4
+custom_styles/normal = SubResource( 10 )
+custom_fonts/font = SubResource( 11 )
+align = 3
+max_length = 128
+placeholder_text = "task name"
+caret_blink = true
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="Polygon2D" type="Polygon2D" parent="taskinput/taskname"]
+position = Vector2( 0.343903, 0.288757 )
+color = Color( 1, 1, 1, 0 )
+polygon = PoolVector2Array( -9.11802, 0.054245, -57.5312, 38.1625, 350.36, 38.3629, 359.867, 34.5632, 365.505, 26.7812, 367.545, 19.4865, 366.422, 12.9314, 361.833, 5.43983, 353.478, 0.499695 )
+script = ExtResource( 5 )
+
+[node name="task" type="Label" parent="taskinput"]
+anchor_left = 0.05
+anchor_top = 0.18
+anchor_right = 0.1
+anchor_bottom = 0.2
+margin_right = 40.0
+margin_bottom = 14.0
+custom_fonts/font = SubResource( 13 )
+custom_colors/font_color = Color( 0.176471, 0.188235, 0.278431, 1 )
+text = "workin on:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="task2" type="Label" parent="taskinput"]
+anchor_left = 0.05
+anchor_top = 0.36
+anchor_right = 0.1
+anchor_bottom = 0.36
+margin_right = 40.0
+margin_bottom = 14.0
+custom_fonts/font = SubResource( 14 )
+custom_colors/font_color = Color( 0.176471, 0.188235, 0.278431, 1 )
+text = "work time"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="task3" type="Label" parent="taskinput"]
+anchor_left = 0.05
+anchor_top = 0.54
+anchor_right = 0.1
+anchor_bottom = 0.54
+margin_right = 40.0
+margin_bottom = 14.0
+custom_fonts/font = SubResource( 15 )
+custom_colors/font_color = Color( 0.176471, 0.188235, 0.278431, 1 )
+text = "break time"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="wtime" type="HSlider" parent="taskinput"]
+anchor_left = 0.08
+anchor_top = 0.44
+anchor_right = 0.9
+anchor_bottom = 0.44
+margin_right = 2.80002
+margin_bottom = 20.0
+size_flags_vertical = 4
+custom_styles/slider = SubResource( 16 )
+custom_styles/grabber_area_highlight = SubResource( 17 )
+custom_styles/grabber_area = SubResource( 18 )
+min_value = 5.0
+max_value = 60.0
+step = 5.0
+value = 5.0
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="btime" type="HSlider" parent="taskinput"]
+anchor_left = 0.08
+anchor_top = 0.62
+anchor_right = 0.9
+anchor_bottom = 0.62
+margin_right = 2.80002
+margin_bottom = 20.0
+size_flags_vertical = 4
+custom_styles/slider = SubResource( 19 )
+custom_styles/grabber_area_highlight = SubResource( 20 )
+custom_styles/grabber_area = SubResource( 21 )
+min_value = 5.0
+max_value = 60.0
+step = 5.0
+value = 5.0
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="wtimeLabel" type="Label" parent="taskinput"]
+anchor_left = 0.05
+anchor_top = 0.435
+anchor_right = 0.1
+anchor_bottom = 0.45
+margin_left = 1.49831
+margin_right = 1.49831
+margin_bottom = 19.48
+custom_fonts/font = SubResource( 23 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "5"
+
+[node name="btimeLabel" type="Label" parent="taskinput"]
+anchor_left = 0.05
+anchor_top = 0.615
+anchor_right = 0.1
+anchor_bottom = 0.62
+margin_left = 1.49831
+margin_right = 1.49831
+margin_bottom = 19.48
+custom_fonts/font = SubResource( 24 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "5"
+
+[node name="tasktimer" type="Control" parent="."]
+visible = false
+margin_right = 432.0
+margin_bottom = 768.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="timerlabel" type="Label" parent="tasktimer"]
+anchor_top = 0.2
+anchor_bottom = 0.2
+margin_top = 0.399994
+margin_right = 432.0
+margin_bottom = 95.4
+custom_fonts/font = SubResource( 25 )
+custom_colors/font_color = Color( 0.176471, 0.188235, 0.278431, 1 )
+text = "25:00"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="taskname" type="Label" parent="tasktimer"]
+anchor_left = 0.05
+anchor_top = 0.4
+anchor_right = 0.275
+anchor_bottom = 0.4
+margin_left = 0.4
+margin_top = -0.200012
+margin_right = 287.8
+margin_bottom = 104.8
+custom_fonts/font = SubResource( 26 )
+custom_colors/font_color = Color( 0.176471, 0.188235, 0.278431, 1 )
+text = "task name"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="timer" type="Timer" parent="tasktimer"]
+
+[node name="extend5" type="Button" parent="tasktimer"]
+anchor_left = 0.1
+anchor_top = 0.75
+anchor_right = 0.63
+anchor_bottom = 0.75
+margin_left = 0.439987
+margin_right = 115.88
+margin_bottom = 70.0
+size_flags_vertical = 4
+theme = SubResource( 27 )
+custom_styles/hover = SubResource( 28 )
+custom_styles/pressed = SubResource( 29 )
+custom_styles/focus = SubResource( 30 )
+custom_styles/normal = SubResource( 31 )
+custom_fonts/font = SubResource( 32 )
+text = "add 5 min"
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="end" type="Button" parent="tasktimer"]
+anchor_left = 0.1
+anchor_top = 0.86
+anchor_right = 0.63
+anchor_bottom = 0.86
+margin_left = 0.439987
+margin_right = 115.88
+margin_bottom = 70.0
+size_flags_vertical = 4
+theme = SubResource( 27 )
+custom_styles/hover = SubResource( 28 )
+custom_styles/pressed = SubResource( 29 )
+custom_styles/focus = SubResource( 30 )
+custom_styles/normal = SubResource( 31 )
+custom_fonts/font = SubResource( 32 )
+text = "end early"
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="breaktimer" type="Control" parent="."]
+visible = false
+margin_right = 432.0
+margin_bottom = 768.0
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="timerlabelb" type="Label" parent="breaktimer"]
+anchor_top = 0.2
+anchor_bottom = 0.2
+margin_top = 0.399994
+margin_right = 432.0
+margin_bottom = 95.4
+custom_fonts/font = SubResource( 25 )
+custom_colors/font_color = Color( 0.176471, 0.188235, 0.278431, 1 )
+text = "25:00"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="tasknameb" type="Label" parent="breaktimer"]
+anchor_left = 0.05
+anchor_top = 0.4
+anchor_right = 0.275
+anchor_bottom = 0.4
+margin_left = 0.4
+margin_top = -0.200012
+margin_right = 287.8
+margin_bottom = 104.8
+custom_fonts/font = SubResource( 26 )
+custom_colors/font_color = Color( 0.176471, 0.188235, 0.278431, 1 )
+text = "break time
+empty head"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="timerb" type="Timer" parent="breaktimer"]
+
+[node name="extend5b" type="Button" parent="breaktimer"]
+anchor_left = 0.1
+anchor_top = 0.75
+anchor_right = 0.63
+anchor_bottom = 0.75
+margin_left = 0.439987
+margin_right = 115.88
+margin_bottom = 70.0
+size_flags_vertical = 4
+theme = SubResource( 27 )
+custom_styles/hover = SubResource( 28 )
+custom_styles/pressed = SubResource( 29 )
+custom_styles/focus = SubResource( 30 )
+custom_styles/normal = SubResource( 31 )
+custom_fonts/font = SubResource( 32 )
+text = "add 5 min"
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="endb" type="Button" parent="breaktimer"]
+anchor_left = 0.1
+anchor_top = 0.86
+anchor_right = 0.63
+anchor_bottom = 0.86
+margin_left = 0.439987
+margin_right = 115.88
+margin_bottom = 70.0
+size_flags_vertical = 4
+theme = SubResource( 27 )
+custom_styles/hover = SubResource( 28 )
+custom_styles/pressed = SubResource( 29 )
+custom_styles/focus = SubResource( 30 )
+custom_styles/normal = SubResource( 31 )
+custom_fonts/font = SubResource( 32 )
+text = "end early"
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="timeup" type="Control" parent="."]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="timeupl" type="Label" parent="timeup"]
+anchor_top = 0.2
+anchor_bottom = 0.2
+margin_top = 146.0
+margin_right = 432.0
+margin_bottom = 288.0
+custom_fonts/font = SubResource( 25 )
+custom_colors/font_color = Color( 0.176471, 0.188235, 0.278431, 1 )
+text = "task done,
+nice"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="endc" type="Button" parent="timeup"]
+anchor_left = 0.1
+anchor_top = 0.75
+anchor_right = 0.63
+anchor_bottom = 0.75
+margin_left = 76.1501
+margin_top = 546.0
+margin_right = 320.95
+margin_bottom = 616.0
+size_flags_vertical = 4
+theme = SubResource( 27 )
+custom_styles/hover = SubResource( 28 )
+custom_styles/pressed = SubResource( 29 )
+custom_styles/focus = SubResource( 30 )
+custom_styles/normal = SubResource( 31 )
+custom_fonts/font = SubResource( 32 )
+text = "again"
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+[connection signal="btime" from="taskinput" to="breaktimer" method="_on_taskinput_btime"]
+[connection signal="taskname" from="taskinput" to="." method="_on_taskinput_taskname"]
+[connection signal="taskname" from="taskinput" to="tasktimer" method="_on_taskinput_taskname"]
+[connection signal="wtime" from="taskinput" to="tasktimer" method="_on_taskinput_wtime"]
+[connection signal="pressed" from="taskinput/go" to="taskinput" method="_on_go_pressed"]
+[connection signal="value_changed" from="taskinput/wtime" to="taskinput" method="_on_wtime_value_changed"]
+[connection signal="value_changed" from="taskinput/btime" to="taskinput" method="_on_btime_value_changed"]
+[connection signal="timeout" from="tasktimer/timer" to="." method="_on_timer_timeout"]
+[connection signal="pressed" from="tasktimer/extend5" to="tasktimer" method="_on_extend5_pressed"]
+[connection signal="pressed" from="tasktimer/end" to="." method="_on_end_pressed"]
+[connection signal="timeout" from="breaktimer/timerb" to="." method="_on_timerb_timeout"]
+[connection signal="pressed" from="breaktimer/extend5b" to="breaktimer" method="_on_extend5b_pressed"]
+[connection signal="pressed" from="breaktimer/endb" to="." method="_on_endb_pressed"]
+[connection signal="pressed" from="timeup/endc" to="." method="_on_endc_pressed"]
