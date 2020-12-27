@@ -1,4 +1,3 @@
-```
 # pomrood
 
 simple pomodoro timer app made in godot
@@ -18,4 +17,3 @@ simple pomodoro timer app made in godot
 ![work timer screen](https://raw.githubusercontent.com/KaizenEnguerra/pomrood/main/press%20screens/screen2.png)
 
 ![break timer screen](https://raw.githubusercontent.com/KaizenEnguerra/pomrood/main/press%20screens/screen3.png)
-```
