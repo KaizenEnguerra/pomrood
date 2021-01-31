@@ -55,8 +55,8 @@ RestHandler="*res://addons/github-integration/scenes/RestHandler.tscn"
 
 [display]
 
-window/size/width=1920
-window/size/height=1020
+window/size/width=480
+window/size/height=852
 
 [editor_plugins]
 

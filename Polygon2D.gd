@@ -4,14 +4,14 @@ extends Polygon2D
 var poly = self
 
 var shadow_dir: Vector2
-var shadow_color: Color = Color(0, 0, 0, 0.35)
+var shadow_color: Color = Color(0, 0, 0, 0.15)
 var shadow_end_color: Color = Color(0, 0, 0, 0)
 func _ready():
 	pass
 	
 
 func _process(_delta):
-	shadow_dir = Vector2(12,12)
+	shadow_dir = Vector2(4,12)
 	update()
 
 func _draw():
